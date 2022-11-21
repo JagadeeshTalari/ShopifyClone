@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./shopify_images/shopifyicon2.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/9de1acd69f.js" crossorigin="anonymous"></script>
     <script>
@@ -29,9 +30,9 @@
 
                 'lg': '1080px',
 
-                'lg': '1250px',
+                'xl': '1250px',
 
-                '2xl': '1536px',
+                '2xl': '1436px',
 
                 }
             },
@@ -45,20 +46,67 @@
 <body class="bg-bgcolor w-screen">
     
         <!-- nav-bar section -->
-        <nav class="w-screen bg-bgcolor flex flex-row items-center justify-between px-5 pt-px pb-0.5 fixed z-10">
+        <nav class="w-screen bg-bgcolor flex flex-row items-center justify-between px-6 py-3.5 fixed z-10 text-fontcolor text-[1.05rem] font-semibold
+        sm:px-8
+        md:px-12
+        lg:px-20 lg:py-5 lg:drop-shadow
+        xl:px-[84px]
+        2xl:px-[88px]">
 
-            <!-- logo -->
-            <div class="w-[8rem]">
-                <img class="w-[8rem]"  src="./my_shopify_asset_collection/ShopifyLogo.png" alt="ShopifyLogo">
-            </div>
             
-            <div class="flex flex-row gap-7 pr-1 items-center text-[1.1rem] font-semibold text-fontcolor">
+            <div class="nav-left-section flex flex-row items-center space-x-6">
+
+                <!-- logo -->
+                <div class="w-[7rem] lg:w-[9rem]">
+                    <img class="w-[7rem] lg:w-[7.5rem]"  src="./shopify_images/shopifyLogo.svg" alt="ShopifyLogo">
+                </div>
+
+                <!-- nav-left-items -->
+                <div class="hidden lg:flex lg:flex-row lg:space-x-9">
+                    <div class="hover:text-black">
+                        Start <span class="text-[12px] font-bold align-[2px] text-gray-500/90
+                        hover:text-black"><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                    
+                    <div class="hover:text-black">
+                        Sell <span class="text-[12px] font-bold align-[2px] text-gray-500/90
+                        hover:text-black"><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+
+                    <div class="hover:text-black">
+                        Market <span class="text-[12px] font-bold align-[2px] text-gray-500/90
+                        hover:text-black"><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+
+                    <div class="hover:text-black">
+                        Manage <span class="text-[12px] font-bold align-[2px] text-gray-500/90
+                        hover:text-black"><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- nav-list & login button section -->
+            <div class="hidden lg:flex">
+                <!-- nav-left-items -->
+                <div class="flex flex-row items-center space-x-9">
+                    <div>Pricing</div>
+                    <div class="hover:text-black">Learn <span class="text-[12px] font-bold align-[2px] text-gray-500/90 hover:text-black"><i class="fa-solid fa-angle-down"></i></span></div>
+                    <div>Log in</div>
+                    <button class="bg-green text-white px-5 py-2.5 rounded font-semibold drop-shadow-md hover:bg-darkgreen">Try for free</button>
+                    
+                </div>
+            </div>
+
+            <!-- nav-right section for small & medium devices -->
+            <div class="lg:hidden flex flex-row gap-7 items-center text-[1.1rem] font-semibold text-fontcolor">
+
                 <a href="#">Log in</a>
 
                 <!-- Nav-bar hamburger icon -->
                 <div class="text-[1.4rem] lg:hidden">
                     <i class="fa-solid fa-bars"></i>
                 </div>
+
             </div>
 
         </nav>
@@ -67,7 +115,7 @@
         <section aria-label="content">
             
             <!-- section 1 -->
-            <div class="section1">
+            <div class=" section1">
                 <!-- content -section-1 -->
                 <div>
                     <h1></h1>
@@ -82,7 +130,7 @@
 
                 <!-- image -section-1 -->
                 <div>
-                    <img src="./my_shopify_asset_collection/yourecommer.png" alt="">
+                    <img src="./shopify_images/yourecommer.png" alt="">
                 </div>
             </div>
 
