@@ -28,11 +28,15 @@
 
                 'md': '750px',
 
+                'xmd': '850px',
+
                 'lg': '1080px',
 
                 'xl': '1123px',
 
                 '2xl': '1260px',
+
+                '3xl': '1440px',
 
                 }
             },
@@ -207,25 +211,34 @@
 
                 </div>
             <!-- section 2 -->
-                <section class=" px-6 py-16 bg-darkgreen w-screen text-white">
+                <section class=" px-6 py-16 bg-darkgreen w-screen text-white
+                                sm:px-8
+                                md:px-12 md:py-[6rem]
+                                lg:px-[74px]
+                                xl:px-[84px]
+                                2xl:px-[88px]">
 
                     <div class="section-2-wrapper">
 
                         <!-- cards - Top Section -->
-                        <div class="flex flex-col gap-12">
+                        <div class="flex flex-col gap-12
+                                    3xl:gap-20">
 
                             <!-- cards heading -->
                             <div class="flex flex-col gap-5">
 
-                                <h1 class="text-[28px] leading-9">Bring your business online</h1>
+                                <h1 class="text-[28px] leading-9
+                                            lg:text-[38px]
+                                            3xl:text-[40px]">Bring your business online</h1>
 
-                                <div class="flex flex-col gap-5">
+                                <div class="flex flex-col gap-5
+                                            3xl:flex-row justify-between">
 
-                                    <p>
+                                    <p class="text-[16.5px] font-normal">
                                         Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.
                                     </p>
 
-                                    <h1 class="font-semibold">
+                                    <h1 class="text-[17px] font-semibold">
                                         Explore more examples ->
                                     </h1>
                                 </div>
@@ -233,44 +246,59 @@
                             </div>
 
                             <!-- cards division -->
-                            <div class="grid grid-cols-2 gap-x-4 gap-y-12">
+                            <div class="grid grid-cols-2 gap-x-4 gap-y-14
+                                        md:grid-cols-3
+                                        xmd:grid-cols-4
+                                        lg:grid-cols-5">
 
                                 <!-- card 1 -->
                                 <div class="flex flex-col">
-                                    <div class="mb-2">
-                                        <img src="./shopify_images/FoodCard1.jpg" alt="">
+                                    <div class="mb-2 w-full">
+                                        <img class="w-full" src="./shopify_images/FoodCard1.jpg" alt="">
                                     </div>
                                     <h4 class="text-[15px] font-semibold">FOOD & DRINK</h4>
-                                    <h3>Blue Tokai</h3>
+                                    <h3 class="text-[18px]">Blue Tokai</h3>
                                 </div>
 
                                 <!-- card 2 -->
                                 <div class="flex flex-col">
-                                    <div class="mb-2">
-                                        <img src="./shopify_images/JewelryCard2.png" alt="">
+                                    <div class="mb-2 w-full">
+                                        <img class="w-full" src="./shopify_images/JewelryCard2.png" alt="">
                                     </div>
                                     <h4 class="text-[15px] font-semibold">JEWELRY</h4>
-                                    <h3>Quirksmith</h3>
+                                    <h3 class="text-[18px]">Quirksmith</h3>
                                 </div>
 
                                 <!-- card 3 -->
                                 <div class="flex flex-col">
-                                    <div class="mb-2">
-                                        <img src="./shopify_images/ElectronicsCard3.png" alt="">
+                                    <div class="mb-2 w-full">
+                                        <img class="w-full" src="./shopify_images/ElectronicsCard3.png" alt="">
                                     </div>
                                     <h4 class="text-[15px] font-semibold">ELECTRONICS</h4>
-                                    <h3>Crossbeats</h3>
+                                    <h3 class="text-[18px]">Crossbeats</h3>
                                 </div>
 
                                 <!-- card 4 -->
-                                <div class="flex flex-col">
-                                    <div class="mb-2">
-                                        <img src="./shopify_images/BeautyCard4.png" alt="">
+                                <div class="flex flex-col
+                                            md:hidden
+                                            xmd:flex">
+                                    <div class="mb-2 w-full">
+                                        <img class="w-full" src="./shopify_images/BeautyCard4.png" alt="">
                                     </div>
                                     <h4 class="text-[15px] font-semibold">BEAUTY</h4>
-                                    <h3>Mcaffeine</h3>
+                                    <h3 class="text-[18px]">Mcaffeine</h3>
                                 </div>
 
+                                <!-- card 5 -->
+                                <div class="flex flex-col
+                                            hidden
+                                            lg:flex">
+                                    <div class="mb-2 w-full">
+                                        <img class="w-full" src="./shopify_images/FashionCard5.png" alt="">
+                                    </div>
+                                    <h4 class="text-[15px] font-semibold">FASHION</h4>
+                                    <h3 class="text-[18px]">Bunaai</h3>
+                                </div>
                                 
 
                             </div>
