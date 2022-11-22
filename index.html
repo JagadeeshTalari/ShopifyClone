@@ -22,17 +22,17 @@
 
               screens:  {
 
-                'xs': '300px',
+                'xs': '461px',
 
                 'sm': '600px',
 
-                'md': '768px',
+                'md': '750px',
 
                 'lg': '1080px',
 
-                'xl': '1250px',
+                'xl': '1123px',
 
-                '2xl': '1436px',
+                '2xl': '1260px',
 
                 }
             },
@@ -43,13 +43,14 @@
       </script>
     <title>Shopify Clone by Jagadeesh</title>
 </head>
-<body class="bg-bgcolor w-screen">
+<body class="relative bg-bgcolor w-screen">
     
         <!-- nav-bar section -->
-        <nav class="w-screen bg-bgcolor flex flex-row items-center justify-between px-6 py-3.5 fixed z-10 text-fontcolor text-[1.05rem] font-semibold
+        <nav class="w-screen bg-bgcolor flex flex-row items-center justify-between px-6 py-3.5 sticky top-0 left-0 right-0 text-fontcolor text-[1.05rem] font-semibold
+        xs:px-7
         sm:px-8
         md:px-12
-        lg:px-20 lg:py-5 lg:drop-shadow
+        lg:px-[70px] lg:py-5 lg:drop-shadow
         xl:px-[84px]
         2xl:px-[88px]">
 
@@ -58,7 +59,11 @@
 
                 <!-- logo -->
                 <div class="w-[7rem] lg:w-[9rem]">
-                    <img class="w-[7rem] lg:w-[7.5rem]"  src="./shopify_images/shopifyLogo.svg" alt="ShopifyLogo">
+
+                    <img class="w-[7rem] lg:w-[7.5rem]"  
+                        src="./shopify_images/shopifyLogo.svg" alt="ShopifyLogo"
+                    >
+
                 </div>
 
                 <!-- nav-left-items -->
@@ -83,16 +88,32 @@
                         hover:text-black"><i class="fa-solid fa-angle-down"></i></span>
                     </div>
                 </div>
+                
             </div>
 
-            <!-- nav-list & login button section -->
+            <!-- nav-list & login button section for large and above devices-->
             <div class="hidden lg:flex">
                 <!-- nav-left-items -->
                 <div class="flex flex-row items-center space-x-9">
-                    <div>Pricing</div>
-                    <div class="hover:text-black">Learn <span class="text-[12px] font-bold align-[2px] text-gray-500/90 hover:text-black"><i class="fa-solid fa-angle-down"></i></span></div>
-                    <div>Log in</div>
-                    <button class="bg-green text-white px-5 py-2.5 rounded font-semibold drop-shadow-md hover:bg-darkgreen">Try for free</button>
+
+                    <div hover:text-black>Pricing</div>
+
+                    <div class="hover:text-black">
+                        
+                        Learn 
+
+                        <span class="text-[12px] font-bold align-[2px] text-gray-500/90 hover:text-black">
+
+                            <i class="fa-solid fa-angle-down"></i>
+
+                        </span>
+                    </div>
+
+                    <div hover:text-black>Log in</div>
+
+                    <button class="bg-green text-white px-5 py-2.5 rounded font-semibold drop-shadow-md hover:bg-darkgreen">
+                        Try for free
+                    </button>
                     
                 </div>
             </div>
@@ -112,27 +133,81 @@
         </nav>
 
         <!-- content section -->
-        <section aria-label="content">
+        <section aria-label="content ">
             
             <!-- section 1 -->
-            <div class=" section1">
-                <!-- content -section-1 -->
-                <div>
-                    <h1></h1>
-                    <h4></h4>
-                    <form action="">
-                        <input type="email">
-                        <button>Try for free</button>
+            
+                <div class=" section1 flex flex-col px-6 gap-10
+                            xs:px-7
+                            md:px-12 md:gap-16
+                            lg:px-[70px] lg:flex-row lg:pt-24 lg:gap-0 lg:w-full
+                            ">
 
-                    </form>
-                    <p></p>
+                    <!-- content -section-1 -->
+                    <div class="flex flex-col gap-7 mt-16
+                                md:w-[60vw] md:mt-28
+                                lg:w-1/2 lg:pl-2 lg:pr-[84px] lg:mt-0 lg:gap-10">
+
+                        <h1 class="text-[2rem] leading-[42px] tracking-tight font-bold text-darkgreen
+                        xs:w-[353px]
+                        lg:text-5xl lg:w-full lg:leading-[64px] lg:tracking-[-.05em]
+                        2xl:w-[490px]">
+                            The easiest way to sell online in India
+                        </h1>
+
+                        <h4 class="text-[1.15rem] leading-6  text-gray-600/90
+                                    lg:text-[1.25rem]">
+
+                            Try one of the most powerful platforms on the market for free No technical knowledge needed.
+
+                        </h4>
+
+                        <form class="flex flex-col gap-2
+                                        xs:flex-row xs:w-full xs:h-[60px] xs:justify-center xs:gap-4
+                                        lg:flex-col lg:gap-2 lg:pt-12 lg:pb-8
+                                        xl:flex-row xl:gap-3 xl:py-0 " action="">
+
+                            <input class="py-3.5 px-4 text-[1rem]  font-normal rounded outline 
+                                        outline-[1.59px] outline-gray-500 shadow-md
+                                        xs:w-full xs:h-[50px]" 
+
+                                type="email" placeholder="Enter your email address"
+                            >
+
+                            
+                            <button class="bg-green text-white px-5 py-3.5 rounded font-semibold  hover:bg-darkgreen
+                            xs:w-[200px] xs:py-[5px] xs:px-[22px] xs:h-[50px]
+                            lg:w-full lg:py-3.5
+                            xl:w-[200px]">
+                            
+                                <a class="" href="#"> Try for free  </a>
+
+                            </button>
+                            
+
+                        </form>
+
+                        <p class="text-xs leading-5 text-gray-700 -mt-2
+                                    lg:mt-0 lg:text-[12px]
+                                    xl:-mt-5">
+                            Try Shopify free for 3 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.
+                        </p>
+                        
+                    </div>
+
+                    <!-- image -section-1 -->
+                    <div class="w-screen -mx-6
+                                md:-mx-10
+                                lg:w-1/2 lg:mx-0 lg:overflow-x-clip">
+                        
+                        <img class="w-full" src="./shopify_images/yourecommer.png" alt="">
+                        <div class="hidden w-full relative z-10 h-[2px] bg-[rgba(38,38,38,0.7)]
+                        shadow-[0_-9px_115px_60px_rgba(38,38,38,1)]"></div>
+                    </div>
+
                 </div>
 
-                <!-- image -section-1 -->
-                <div>
-                    <img src="./shopify_images/yourecommer.png" alt="">
-                </div>
-            </div>
+            
 
         </section>
         
