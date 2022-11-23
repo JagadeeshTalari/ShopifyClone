@@ -665,24 +665,35 @@
             <!-- section 6 -->
                 <section class="section-6 bg-white">
 
-                    <!-- section 6 wrapper -->
-                    <div class="w-[88vw]  mx-auto flex flex-col items-center bg-superdarkgreen TestimonySectionwrapper">
+                    <!-- section 6 top-section-wrapper -->
+                    <div class="w-[88vw]  mx-auto flex flex-col items-center bg-superdarkgreen TestimonySectionwrapper
+                    md:flex-row md:h-[550px]
+                    lg:h-[800px]">
                     
                         <!-- Testimony image -->
-                        <div>
-                            <img class="h-80 object-cover object-top " src="./shopify_images/TestimonialImageO2.png" alt="">
+                        <div class="md:w-1/2 md:h-full">
+                            <img class="h-80 object-cover object-top 
+                                        sm:w-full sm:h-auto
+                                        md:hidden" src="./shopify_images/TestimonialImageo2.png" alt="">
+
+                            <img class="hidden md:flex md:object-cover md:h-full md:w-full md:object-center"src="./shopify_images/TestimonialImage.png" alt="">
+
                         </div>
 
                         <!-- Testimonial content -->
-                        <div class="pt-10 pb-[68px] gap-y-9 flex flex-col items-center text-white">
+                        <div class="pt-10 pb-[68px] gap-y-9 flex flex-col items-center text-white
+                                    md:w-1/2 md:pt-4 md:pb-[50px] md:gap-y-10
+                                    lg:w-[38.7%] lg:mx-auto">
 
-                            <div class="text-xl leading-8 px-8 font-semibold  text-center text-white">
+                            <div class="text-xl leading-8 px-8 font-semibold  text-center text-white
+                                        lg:text-3xl lg:leading-[44px]">
                                 
                                 “Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up and running. It was stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”
 
                             </div>
 
-                            <div class="h-16 mx-auto">
+                            <div class="h-16 mx-auto
+                                        md:mt-4">
                                 <img class="h-[68px]" src="./shopify_images/alisa.png" alt="">
                             </div>
 
@@ -695,7 +706,9 @@
 
                     <!-- other signatures -->
                     <div class="w-[85vw] py-10 pb-16 grid grid-cols-2 gap-x-6 gap-y-8 justify-between mx-auto
-                                xxs:grid-cols-3">
+                                xxs:grid-cols-3
+                                md:grid-cols-5
+                                lg:grid-cols-7">
 
                         <div class="justify-self-center">
                             <img class="h-10" src="./shopify_images/Bajaa0.png" alt="">
@@ -718,12 +731,15 @@
                             <img class="h-10" src="./shopify_images/YogaBar.png" alt="">
                         </div>
 
-                        <div class="justify-self-center">
+                        <div class="justify-self-center
+                                    md:col-span-2
+                                    lg:col-span-1">
                             <img class="h-10" src="./shopify_images/starStuck.png" alt="">
                         </div>
 
                         <div class="col-span-2 justify-self-center
-                                    xxs:col-span-3">
+                                    xxs:col-span-3
+                                    lg:col-span-1">
                             <img class="h-10 " src="./shopify_images/mCaffeine.png" alt="">
                         </div>
 
