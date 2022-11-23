@@ -48,7 +48,7 @@
       </script>
     <title>Shopify Clone by Jagadeesh</title>
 </head>
-<body class="relative bg-bgcolor w-screen">
+<body class="bg-bgcolor w-screen overflow-x-hidden">
     
         <!-- nav-bar section -->
         <nav class="w-screen bg-bgcolor flex flex-row items-center justify-between px-6 py-3.5 sticky top-0 left-0 right-0 text-fontcolor text-[1.05rem] font-semibold
@@ -553,11 +553,16 @@
                 </section>
 
             <!-- footer section -->
-
-                <footer class="px-6 py-8 flex flex-col gap-y-4 bg-superdarkgreen text-gray-200">
+                
+                <footer class="w-screen px-6 py-8 flex flex-col gap-y-4 bg-superdarkgreen text-gray-200
+                               md:px-12
+                               lg:px-[70px]
+                               xl:px-[84px]
+                               2xl:px-[88px]">
 
                     <!-- heading elements -->
-                    <div class="text-[16px] mb-2.5 flex flex-row flex-wrap  mx-auto gap-x-6 gap-y-2 justify-center leading-5 font-semibold text-white">
+                    <div class="text-[16px] mb-2.5 flex flex-row flex-wrap  mx-auto gap-x-6 gap-y-2 justify-center leading-5 font-semibold text-white
+                                md:mx-0 md:justify-start">
                         <p>About</p>
                         <p>Careers
                         </p>
@@ -570,9 +575,11 @@
                     <div class="h-[0.1px] mb-2 bg-gray-100/10"></div>
 
                     <!-- list items -->
-                    <div class="text-[14.8px] tracking-tight gap-x-1 gap-y-6 grid grid-cols-2 font-normal text-gray-300/80">
+                    <div class="text-[14.8px] tracking-tight gap-x-1 gap-y-6 grid grid-cols-2 font-normal text-gray-300/80
+                                md:grid-cols-6">
 
-                        <div class="flex flex-col gap-y-2.5 ">
+                        <div class="flex flex-col gap-y-2.5 
+                                    md:grid md:grid-cols-3 md:col-span-3">
 
                             <div class="flex flex-col gap-y-2">
                                 <h1 class="font-semibold text-[15px] tracking-tight text-white"> ONLINE STORE</h1>
@@ -582,15 +589,16 @@
                                 <p>Online retail</p>
                             </div>
 
-                            <div class="flex flex-col gap-y-2">
-                                <h1 class="hidden lg:visibile"> </h1>
+                            <div class="flex flex-col gap-y-2 md:pt-7">
+                                <h1 class="hidden md:visible md:invisibile">hi</h1>
                                 <p>Ecommerce website</p>
                                 <p>Domain names</p>
                                 <p>Shopping cart</p>
                                 <p>Ecommerce hosting</p>
                             </div>
 
-                            <div class="flex flex-col gap-y-2">
+                            <div class="flex flex-col gap-y-2 md:pt-7">
+                                <h1 class="hidden md:visible md:invisibile">hi</h1>
                                 <p>Mobile commerce</p>
                                 <p>Online store builder</p>
                                 <p>Dropshipping Business</p>
@@ -599,7 +607,8 @@
 
                         </div>
 
-                        <div class="flex flex-col gap-x-4 gap-y-7">
+                        <div class="flex flex-col gap-x-4 gap-y-7
+                                    md:grid md:grid-cols-2 md:col-span-2">
 
                             <div class="flex flex-col gap-y-2.5">
                                 <h1 class="font-semibold text-[15px] text-white"> POINT OF SALE</h1>
@@ -640,14 +649,17 @@
                     </div>
 
                     <!-- horizontal divider 2 full -->
-                    <div class="mt-10 -ml-6 w-screen h-[0.1px] bg-gray-100/10"></div>
+                    <div class="mt-10 -ml-6 w-screen h-[0.1px] bg-gray-100/10
+                                md:-ml-20"></div>
 
                     <!-- footer-social logos section -->
 
-                    <div class="mt-4 py-3 gap-y-4 flex flex-col mx-auto">
+                    <div class="mt-4 py-3 gap-y-4 flex flex-col mx-auto
+                                md:flex-row md:justify-between md:w-full">
 
                         <!-- social icons -->
-                        <div class="text-[22px] mx-auto flex flex-row gap-x-7">
+                        <div class="text-[22px] mx-auto flex flex-row gap-x-7
+                        md:mx-0">
 
                             <i class="fa-brands fa-facebook"></i>
                             <i class="fa-brands fa-square-twitter"></i>
@@ -659,27 +671,31 @@
                         </div>
 
                         <!-- Terms of Service etc -->
-                        <div class="text-[16.2px] flex flex-row gap-x-2 text-gray-300/80">
+                        <div class="text-[16.2px] flex flex-row gap-x-2 text-gray-300/80
+                                    md:gap-x-3">
 
                             <div>Terms of Service</div>
 
-                            <div class="flex flex-row items-center">
+                            <div> Privacy Policy </div>
 
-                                <div> Privacy Policy </div>
+                            <div class="flex flex-row items-center">                            
 
                                 <div>
                                 <img class="w-6" src="./shopify_images/globeIcon.svg" alt="">
                                 </div>
 
+                                <div class="text-white">India <i class="fa-solid fa-caret-down"></i></div>
+
                             </div>
                             
-                            <div class="text-white">India <i class="fa-solid fa-caret-down"></i></div>
+                            
 
                         </div>
 
                     </div>
 
                 </footer>
+                
 
             
 
